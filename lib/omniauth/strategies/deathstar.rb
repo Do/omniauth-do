@@ -8,8 +8,8 @@ module OmniAuth
       option :name, "deathstar" 
       option :client_options, {
         :site => SITE_URL,
-        :authorize_url => SITE_URL = '/oauth2/authorize',
-        :token_url => SITE_URL = '/oauth2/token'
+        :authorize_url => SITE_URL + '/oauth2/authorize',
+        :token_url => SITE_URL + '/oauth2/token'
       }
 
       uid {raw_info['id']}
