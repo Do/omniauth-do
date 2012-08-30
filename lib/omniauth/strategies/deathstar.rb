@@ -1,10 +1,10 @@
 require 'omniauth-oauth2'
 
-SITE_URL = "https://do.com"
-
 module OmniAuth
   module Strategies
     class Deathstar < OmniAuth::Strategies::OAuth2
+      SITE_URL = "https://do.com"
+
       option :name, "deathstar" 
       option :client_options, {
         :site => SITE_URL,
