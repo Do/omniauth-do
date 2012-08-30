@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe OmniAuth::Strategies::Deathstar do
+describe OmniAuth::Strategies::Do do
   subject do
-    OmniAuth::Strategies::Deathstar.new({})
+    OmniAuth::Strategies::Do.new({})
   end
 
   context "client options" do

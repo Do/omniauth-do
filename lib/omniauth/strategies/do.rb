@@ -2,10 +2,10 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class Deathstar < OmniAuth::Strategies::OAuth2
+    class Do < OmniAuth::Strategies::OAuth2
       SITE_URL = "https://do.com"
 
-      option :name, "deathstar" 
+      option :name, "do" 
       option :client_options, {
         :site => SITE_URL,
         :authorize_url => SITE_URL + '/oauth2/authorize',
@@ -29,7 +29,7 @@ module OmniAuth
       end
  
       def raw_info
-        @raw_info ||= access_token.get('/account.json').parsed || {}
+        @raw_info ||= access_token.get('/account').parsed || {}
       end
 
     end

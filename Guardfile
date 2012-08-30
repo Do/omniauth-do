@@ -6,5 +6,5 @@ end
 
 guard 'bundler' do
   watch('Gemfile')
-  watch('omniauth-deathstar.gemspec')
+  watch('omniauth-do.gemspec')
 end

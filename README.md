@@ -1,4 +1,4 @@
-# OmniAuth Deathstar
+# OmniAuth Do
 
 This is an OmniAuth strategy for authenticating to [Do](https://do.com). To
 use it, you'll need to request an OAuth2 Application ID and Secret
@@ -7,7 +7,7 @@ by e-mailing dev@do.com.
 ## Basic Usage
 
     use OmniAuth::Builder do
-      provider :deathstar, ENV['DEATHSTAR_KEY'], ENV['DEATHSTAR_SECRET']
+      provider :do, ENV['DO_KEY'], ENV['DO_SECRET']
     end
 
 ### User Scopes
@@ -17,7 +17,7 @@ of a user's data. Note that during the Do API Beta period, all scopes
 will result in full-access to user data. 
 
     use OmniAuth::Builder do
-      provider :deathstar, ENV['DEATHSTAR_KEY'], ENV['DEATHSTAR_SECRET'], scope: "user.profile"
+      provider :do, ENV['DO_KEY'], ENV['DO_SECRET'], scope: "user.profile"
     end
 
 For questions about the forthcoming implementations of scopes, e-mail
