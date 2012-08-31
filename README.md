@@ -46,10 +46,10 @@ file an [issue][issues]. [Project changelog][changelog].
 
 
 
-[do]:                  https://do.com
-[legal]:               https://do.com/legal
-[confidential-clients] http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-2.1
-[pullrequests]:        https://github.com/Do/omniauth-do/pulls
-[issues]:              https://github.com/Do/omniauth-do/issues
-[changelog]:           https://github.com/Do/omniauth-do/blob/master/CHANGELOG.md
-[license]:             https://github.com/Do/omniauth-do/blob/master/LICENSE
+[do]:                   https://do.com
+[legal]:                https://do.com/legal
+[confidential-clients]: http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-2.1
+[pullrequests]:         https://github.com/Do/omniauth-do/pulls
+[issues]:               https://github.com/Do/omniauth-do/issues
+[changelog]:            https://github.com/Do/omniauth-do/blob/master/CHANGELOG.md
+[license]:              https://github.com/Do/omniauth-do/blob/master/LICENSE
