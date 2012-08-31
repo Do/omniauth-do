@@ -3,7 +3,7 @@ require 'omniauth-oauth2'
 module OmniAuth
   module Strategies
     class Do < OmniAuth::Strategies::OAuth2
-      SITE_URL = "https://do.com"
+      SITE_URL = 'https://www.do.com'
 
       option :name, "do" 
       option :client_options, {
