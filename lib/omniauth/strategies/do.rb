@@ -7,25 +7,25 @@ module OmniAuth
 
       option :name, "do" 
       option :client_options, {
-        :site => SITE_URL,
+        :site          => SITE_URL,
         :authorize_url => SITE_URL + '/oauth2/authorize',
-        :token_url => SITE_URL + '/oauth2/token'
+        :token_url     => SITE_URL + '/oauth2/token'
       }
 
       uid {raw_info['id']}
 
       info do
         {
-          name: raw_info['name'],
-          first_name: raw_info['first_name'],
-          last_name: raw_info['last_name'],
-          email: raw_info['email'],
-          image: raw_info['avatar']['48']
+          :name       => raw_info['name'],
+          :first_name => raw_info['first_name'],
+          :last_name  => raw_info['last_name'],
+          :email      => raw_info['email'],
+          :image      => raw_info['avatar']['48']
         }
       end
 
       extra do
-        {:raw_info => raw_info}
+        { :raw_info => raw_info }
       end
  
       def raw_info
