@@ -1,6 +1,5 @@
 source 'http://rubygems.org'
 
-# Specify your gem's dependencies in omniauth-do.gemspec
 gemspec
 
 group :development, :test do
